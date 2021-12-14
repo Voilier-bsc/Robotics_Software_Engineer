@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="pick_objects" name="pick_objects" type="pick_objects" output="screen">
+        <rosparam file="$(find pick_objects)/config.yaml" command="load"/>
+    </node>
+</launch>

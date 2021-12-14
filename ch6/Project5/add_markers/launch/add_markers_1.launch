@@ -1,0 +1,7 @@
+<launch>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find add_markers)/../my_robot/rviz/marker.rviz"/>
+
+    <node pkg="add_markers" name="add_markers_1" type="add_markers_1">
+        <rosparam file="$(find add_markers)/config.yaml" command="load"/>
+    </node>
+</launch>
